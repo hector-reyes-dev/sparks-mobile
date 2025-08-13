@@ -14,6 +14,7 @@ export default function BlurTabBarBackground() {
   );
 }
 
+// No-op hook replacing useBottomTabBarHeight when React Navigation tabs are not used
 export function useBottomTabOverflow() {
-  return useBottomTabBarHeight();
+  return 0;
 }
