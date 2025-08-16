@@ -9,7 +9,11 @@ export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <StatusBar style="auto" />
-      <Stack screenOptions={{ headerShown: false }}>
+      <Stack 
+        screenOptions={{ headerShown: false }}
+        initialRouteName="splash"
+      >
+        <Stack.Screen name="splash" />
         <Stack.Screen name="index" />
         <Stack.Screen name="auth" />
         <Stack.Screen name="dashboard" />
